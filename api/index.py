@@ -7,7 +7,7 @@ letters = string.ascii_lowercase
 result_str = ''.join(random.choice(letters) for i in range(32)) # 32 random characters
 app.secret_key = result_str
 
-app.secret_key = "kdjfkajayfmbogpsHJghafbjh"
+# app.secret_key = "kdjfkajayfmbogpsHJghafbjh" #debugging
 
 @app.route('/')
 def dash():
