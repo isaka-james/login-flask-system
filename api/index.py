@@ -16,14 +16,14 @@ def dash():
     return redirect(f'/dash/{session["username"]}')
   else:
     return render_template('login.html',title='Login to Your Account')
-
+"""
 @app.route('/login')
 def login():
   if 'username' in session:
     return redirect(f'/dash/{session["username"]}')
   else:
     return render_template('login.html',title='Login to Your Account')
-"""
+    
 @app.route('dash/<name>')
 def home():
   if not 'username' in session:
