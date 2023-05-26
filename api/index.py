@@ -11,11 +11,14 @@ app.secret_key = ''.join(random.choice(letters) for i in range(32)) # 32 random 
 # app.secret_key = "kdjfkajayfmbogpsHJghafbjh" #debugging
 
 @app.route('/')
-def dash():
+def dash(): 
+  return 'hope'+app.secret_key
+  """
   if 'username' in session:
     return redirect(f'/dash/{session["username"]}')
   else:
     return render_template('login.html',title='Login to Your Account')
+  """
 """
 @app.route('/login')
 def login():
