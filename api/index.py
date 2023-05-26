@@ -1,14 +1,18 @@
 from flask import Flask,session,url_for,render_template,redirect
 
 app=Flask(__name__)
-
+"""
 # getting the secret key for the sessions
 letters = string.ascii_lowercase
 result_str = ''.join(random.choice(letters) for i in range(32)) # 32 random characters
 app.secret_key = result_str
+"""
+app.secret_key = "kdjfkajayfmbogpsHJghafbjh"
 
 @app.route('/')
 def dash():
+  return "debugging"
+  """
   if 'username' in session:
     return redirect(f'/dash/{session["username"]}')
   else:
@@ -60,6 +64,7 @@ def logout():
   if 'username' in session:
     session.pop('username')
   return redirect('/login')
+"""
 
 if __name__=='__main__':
   app.run(debug=True)
