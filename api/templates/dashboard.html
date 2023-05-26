@@ -1,0 +1,9 @@
+{% extends 'head.html' %} 
+
+{% block content %} 
+    <div class="logout"> <a href="/Logout" id="logout"> Logout </a></div>
+    <div class="dash">
+        <p class="welcome" > welcome <span class="name">{{session['name']}}</span></p>
+        <img src='{{url_for("static",filename="imgs/masterplan.jpg")}}' class="profile"/>
+    </div>
+{% endblock %}
