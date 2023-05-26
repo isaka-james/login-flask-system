@@ -23,7 +23,7 @@ def login():
     return redirect(f'/dash/{session["username"]}')
   else:
     return render_template('login.html',title='Login to Your Account')
-
+"""
 @app.route('dash/<name>')
 def home():
   if not 'username' in session:
@@ -63,6 +63,6 @@ def logout():
   if 'username' in session:
     session.pop('username')
   return redirect('/login')
-
+"""
 if __name__=='__main__':
   app.run(debug=True)
