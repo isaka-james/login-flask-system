@@ -12,8 +12,6 @@ app.secret_key = ''.join(random.choice(letters) for i in range(32)) # 32 random 
 
 @app.route('/')
 def dash():
-  return "debugging2"
-  """
   if 'username' in session:
     return redirect(f'/dash/{session["username"]}')
   else:
@@ -65,7 +63,6 @@ def logout():
   if 'username' in session:
     session.pop('username')
   return redirect('/login')
-"""
 
 if __name__=='__main__':
   app.run(debug=True)
