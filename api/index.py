@@ -1,4 +1,6 @@
 from flask import Flask,session,url_for,render_template,redirect
+import random
+import string
 
 app=Flask(__name__)
 """
