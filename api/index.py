@@ -3,13 +3,12 @@ import random
 import string
 
 app=Flask(__name__)
-"""
+
 # getting the secret key for the sessions
-# letters = string.ascii_lowercase
-# result_str = ''.join(random.choice(letters) for i in range(32)) # 32 random characters
-# app.secret_key = result_str
-"""
-app.secret_key = "kdjfkajayfmbogpsHJghafbjh" #debugging
+letters = string.ascii_lowercase
+app.secret_key = ''.join(random.choice(letters) for i in range(32)) # 32 random characters
+
+# app.secret_key = "kdjfkajayfmbogpsHJghafbjh" #debugging
 
 @app.route('/')
 def dash():
