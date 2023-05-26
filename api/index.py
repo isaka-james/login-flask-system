@@ -11,7 +11,7 @@ app.secret_key = "kdjfkajayfmbogpsHJghafbjh"
 
 @app.route('/')
 def dash():
-  return "debugging"
+  return "debugging2"
   """
   if 'username' in session:
     return redirect(f'/dash/{session["username"]}')
