@@ -56,8 +56,8 @@ def action():
     # hoorey -> already sign in
 
     # assigning the userful informations
-    username == 'masterplan' # next time fetch this from the database
-    session['username'] = username
+    # next time fetch this from the database
+    session['username'] = 'masterplan'
 
     return redirect(f'/dash/{session["username"]}')
   else:
