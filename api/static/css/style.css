@@ -53,4 +53,8 @@
 
  .result{
     padding-top: 15px;
+    opacity: 40px;
+ }
+ #alert{
+    text-align: center !important;
  }
