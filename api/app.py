@@ -26,7 +26,7 @@ def login():
     return render_template('login.html',title='Login to Your Account')
     
 @app.route('/dash/<name>')
-def home(home):
+def home(name):
   if not 'username' in session:
     return redirect('/login')
   title1 = 'Home Page'
