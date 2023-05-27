@@ -50,7 +50,7 @@ def action():
 
   # implement logarithm here to check the real password from the server(database)
   real_pwd = 'master123'
-  real_username = 'masterplan'
+  real_username = 'masterplan@gmail.com'
 
   if (password == real_pwd) and (username == real_username):
     # hoorey -> already sign in
