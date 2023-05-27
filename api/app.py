@@ -1,4 +1,4 @@
-from flask import Flask,session,url_for,render_template,redirect
+from flask import Flask,session,url_for,render_template,redirect,request
 import random
 import string
 
@@ -25,8 +25,8 @@ def login():
   else:
     return render_template('login.html',title='Login to Your Account')
     
-@app.route('dash/<name>')
-def home():
+@app.route('/dash/<name>')
+def home(home):
   if not 'username' in session:
     return redirect('/login')
   title1 = 'Home Page'
