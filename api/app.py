@@ -53,8 +53,12 @@ def action():
   real_username = 'masterplan'
 
   if (password == real_pwd) and (username == real_username):
-    # hoorey
+    # hoorey -> already sign in
+
+    # assigning the userful informations
+    username == 'masterplan' # next time fetch this from the database
     session['username'] = username
+
     return redirect(f'/dash/{session["username"]}')
   else:
     return render_template('login.html',message="Wrong password or Username",title='Login Failed Try agian!')
