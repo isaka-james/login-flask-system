@@ -50,9 +50,9 @@ def action():
 
   # implement logarithm here to check the real password from the server(database)
   real_pwd = 'master123'
-  real_username = 'masterplan@gmai.com'
+  real_username = 'masterplan'
 
-  if password == real_pwd:
+  if (password == real_pwd) and (username == real_username):
     # hoorey
     session['username'] = username
     return redirect(f'/dash/{session["username"]}')
