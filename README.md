@@ -1,6 +1,6 @@
 # Login-Flask-System
 ###
-# ![App Screenshot](https://komarev.com/ghpvc/?username=reprogamaco&label=Viewed&color=FF033E&style=flat)
+# ![App Screenshot](https://komarev.com/ghpvc/?username=login-flask-sys&label=login-flask-system&color=FF033E&style=flat)
 
 
 This is like my first project in **flask** . I found it very interesting building this project because i used to build advanced projects using *php* but now look this is my first flask project made from scratch.
@@ -23,7 +23,7 @@ Go direct into the  [login-flask-system.vercel.app](https://login-flask-system.v
 
 ## Authors
 
-- [@masterplan](https://twitter.com/reprogamaco)
+- [@masterplan](https://twitter.com/isaka-james)
 
 
 
